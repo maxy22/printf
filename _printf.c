@@ -57,9 +57,9 @@ int _printf(const char *format, ...)
 
     int i = 0;
 
-    char *s = NULL, *p = NULL, *out = NULL, c = '\0', type = '\0';
+    char *s = NULL,*out = NULL, c = '\0', type = '\0';
 
-    unsigned int u = 0;
+
 
     void *ptr = NULL;
 
@@ -259,7 +259,7 @@ int print_hex(unsigned int n, int uppercase)
 
     if (uppercase)
 
-        digits = "0123456789ABCDEF";
+        digits == "0123456789ABCDEF";
 
     if (n / 16)
 
@@ -319,7 +319,7 @@ int print_pointer(void *ptr)
 
  * Return: The number of characters printed
 
- */
+ *
 
 int print_pointer(void *ptr)
 
@@ -334,3 +334,5 @@ int print_pointer(void *ptr)
     return (count);
 
 }
+
+*/
