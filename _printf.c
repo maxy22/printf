@@ -259,7 +259,7 @@ int print_hex(unsigned int n, int uppercase)
 
     if (uppercase)
 
-        digits == "0123456789ABCDEF";
+        digits[] = "0123456789ABCDEF";
 
     if (n / 16)
 
