@@ -52,9 +52,9 @@ int _printf(const char *format, ...)
     va_list args;
 
     int printed = 0;
-    int len;
+    /*int len;/*
     /* precision = 0, width = 0,*/ 
-    i = 0;
+    int i = 0;
 
     char *s = NULL, *p = NULL, *out = NULL, c = '\0', type = '\0';
 
