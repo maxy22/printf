@@ -1,6 +1,35 @@
 #include <stdarg.h>
 #include <string.h>
 #include <stdio.h>
+// Function declarations
+
+int print_number(int n, int base, int is_signed);
+
+int print_hex(unsigned int n, int is_uppercase);
+
+int print_pointer(void* ptr);
+
+// Function implementation
+
+int _printf(const char *format, ...) {
+
+    // ...
+
+    printed += print_number(va_arg(args, int), 10, 1);
+
+    // ...
+
+    printed += print_hex(va_arg(args, unsigned int), (type == 'X'));
+
+    // ...
+
+    printed += print_pointer(ptr);
+
+    // ...
+
+}
+
+
 
 /**
 
