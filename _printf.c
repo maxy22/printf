@@ -255,11 +255,11 @@ int print_hex(unsigned int n, int uppercase)
 
     int count = 0;
 
-    char *digits = "0123456789abcdef";
+    char digits[];
 
     if (uppercase)
 
-        *digits = "0123456789ABCDEF";
+        digits = "0123456789ABCDEF";
 
     if (n / 16)
 
