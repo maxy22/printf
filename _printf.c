@@ -52,7 +52,8 @@ int _printf(const char *format, ...)
     va_list args;
 
     int printed = 0;
-    /*len = 0, precision = 0, width = 0,*/ 
+    int len;
+    /* precision = 0, width = 0,*/ 
     i = 0;
 
     char *s = NULL, *p = NULL, *out = NULL, c = '\0', type = '\0';
