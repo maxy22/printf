@@ -115,8 +115,8 @@ int _printf(const char *format, ...)
                     break;*/
 			    case 's':
 
-                    const char* s;
-			s = va_arg(args, const char*);
+                    const char* s = va_arg(args, const char*);
+			
 
                     if (s == NULL) {
 
