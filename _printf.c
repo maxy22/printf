@@ -309,9 +309,9 @@ int print_pointer(void *ptr)
 
 }
 
-/**
 
- * print_pointer - Prints a pointer address to stdout
+/**
+ * print_pointer2 - Prints a pointer address to stdout
 
  * @ptr: The pointer to print
 
@@ -319,9 +319,9 @@ int print_pointer(void *ptr)
 
  * Return: The number of characters printed
 
- *
+ */
 
-int print_pointer(void *ptr)
+int print_pointer2(void *ptr)
 
 {
 
@@ -334,5 +334,3 @@ int print_pointer(void *ptr)
     return (count);
 
 }
-
-*/
