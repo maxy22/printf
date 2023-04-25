@@ -6,7 +6,7 @@
 int print_number(int n, int base, int is_signed);
 int print_hex(unsigned int n, int uppercase);
 int print_pointer(void *p);
-int len;
+
 
 
 /**
@@ -17,7 +17,7 @@ int len;
 
  *
 
- * Return: The number of characters printed (excluding the null byte used to end
+ * Return: The numer of characters printed (excluding the null byte used to end
 
  * the output to strings), or a negative value if an error occurs.
 
@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 
     va_list args;
 
-    int printed = 0, len = 0, i = 0;
+    int printed = 0, int len = 0, i = 0;
 
     char *s = NULL, *out = NULL, c = '\0', type = '\0';
 
