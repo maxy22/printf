@@ -42,9 +42,10 @@ int _printf(const char *format, ...)
 
      /**c = '\0', type = '\0';
 
-    unsigned int u = 0;
+    unsigned int u = 0;*/
+    char *s = NULL, *out = NULL, c = '\0', type = '\0';
 
-    void *ptr = NULL;*/
+    void *ptr = NULL;
 
     if (!format || (format[0] == '%' && format[1] == '\0'))
 
