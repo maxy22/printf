@@ -124,7 +124,7 @@ int _printf(const char *format, ...)
 
                     }
 
-                    fputs(s, stdout);
+                    putchar(s);
 
                     len = 1;
 
