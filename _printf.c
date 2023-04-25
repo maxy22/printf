@@ -10,7 +10,7 @@ int print_hex(unsigned int n, int uppercase);
 
 int print_pointer1(void *p);
 
-int putchar(char c);
+
 
 int len;
 
@@ -327,7 +327,7 @@ int print_pointer1(void *ptr)
 
  * on error, -1 is retirned
 
- */
+
 
 int putchar(char c)
 
@@ -335,3 +335,4 @@ int putchar(char c)
 
 	return (write(1, &c, 1));
 }
+*/
