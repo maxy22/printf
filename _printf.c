@@ -1,6 +1,12 @@
 #include <stdarg.h>
-
+#include <string.h>
 #include <stdio.h>
+
+
+int print_number(int n, int base, int is_signed);
+int print_hex(unsigned int n, int uppercase);
+int print_pointer(void *p);
+
 
 /**
 
