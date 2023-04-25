@@ -14,8 +14,6 @@
 
 int _printf(const char *format, ...);
 
-int print_pointer2(void *ptr);
-
 int print_number(int n, int base, int signed_);
 
 int print_hex(unsigned int n, int uppercase);

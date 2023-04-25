@@ -319,7 +319,6 @@ int print_pointer(void *ptr)
 
  * Return: The number of characters printed
 
- */
 
 int print_pointer2(void *ptr)
 
@@ -334,3 +333,4 @@ int print_pointer2(void *ptr)
     return (count);
 
 }
+*/
