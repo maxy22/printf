@@ -336,3 +336,72 @@ int putchar(char c)
 	return (write(1, &c, 1));
 }
 */
+void print_formatted_string(const char* format, ...) {
+
+    va_list args;
+
+    va_start(args, format);
+
+    const char* p = format;
+
+    while (*p != '\0') {
+
+        if (*p == '%') {
+
+            switch (*(p + 1)) {
+
+                case 'c': {
+
+                    char c = (char) va_arg(args, int);
+
+                    putchar(c);
+
+                    p += 2;
+
+                    break;
+
+                }
+
+                case 's': {
+
+                    const char* s = va_arg(args, const char*);
+
+                    if (s == NULL) {
+
+                        s = "(null)";
+
+                    }
+
+                    fputs(s, stdout);
+
+                    p += 2;
+
+                    break;
+
+                }
+
+                default: {
+
+                    putchar(*p);
+
+                    p += 1;
+
+                    break;
+
+                }
+
+            }
+
+        } else {
+
+            putchar(*p);
+
+            p += 1;
+
+        }
+
+    }
+
+    va_end(args);
+
+}
