@@ -5,7 +5,7 @@
 
 int print_number(int n, int base, int is_signed);
 int print_hex(unsigned int n, int uppercase);
-int print_pointer(void *p);
+int print_pointer1(void *p);
 
 
 int len;
@@ -296,7 +296,7 @@ int print_pointer(void *ptr)
 
  */
 
-int print_pointer(void *ptr)
+int print_pointer1(void *ptr)
 
 {
 
