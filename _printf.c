@@ -113,8 +113,8 @@ int _printf(const char *format, ...)
 
                     len = strlen(out);
 
-                    break;
-			    case 's':*/
+                    break;*/
+			    case 's':
 
     {
 
