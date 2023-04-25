@@ -70,7 +70,7 @@ int _printf(const char *format, ...)
 
                     len = 1;
 
-                    continue;
+                    break;
 
                 case 's':
 
@@ -84,7 +84,7 @@ int _printf(const char *format, ...)
 
                     len = strlen(out);
 
-                    continue;
+                    break;
 
                 case 'd':
 
@@ -92,19 +92,19 @@ int _printf(const char *format, ...)
 
                     printed += print_number(va_arg(args, int), 10, 1);
 
-                    continue;
+                    break;
 
                 case 'u':
 
                     printed += print_number(va_arg(args, unsigned int), 10, 0);
 
-                    continue;
+                    break;
 
                 case 'o':
 
                     printed += print_number(va_arg(args, unsigned int), 8, 0);
 
-                    continue;
+                    break;
 
                 case 'x':
 
@@ -112,7 +112,7 @@ int _printf(const char *format, ...)
 
                     printed += print_hex(va_arg(args, unsigned int), (type == 'X'));
 
-                    continue;
+                    break;
 
                 case 'p':
 
@@ -120,7 +120,7 @@ int _printf(const char *format, ...)
 
                     printed += print_pointer(ptr);
 
-                    continue;
+                    break;
 
                 case '%':
 
@@ -128,7 +128,7 @@ int _printf(const char *format, ...)
 
                     printed++;
 
-                    continue;
+                    break;
 
                 case '\0':
 
