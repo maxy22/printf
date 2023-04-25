@@ -338,11 +338,13 @@ int putchar(char c)
 */
 void print_formatted_string(const char* format, ...) {
 
-    va_list args;
+	
+    const char* p = format;
+	va_list args;
 
     va_start(args, format);
 
-    const char* p = format;
+    
 
     while (*p != '\0') {
 
