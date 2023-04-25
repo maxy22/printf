@@ -6,9 +6,10 @@
 int print_number(int n, int base, int is_signed);
 int print_hex(unsigned int n, int uppercase);
 int print_pointer1(void *p);
-int _putchar(char c);
-
 /**
+ int _putchar(char c);
+
+
 
  * _putchar - writes char c to stdout
 
