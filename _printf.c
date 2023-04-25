@@ -1,36 +1,6 @@
 #include <stdarg.h>
-#include <string.h>
+
 #include <stdio.h>
-
-
-int print_number(int n, int base, int is_signed);
-
-int print_hex(unsigned int n, int is_uppercase);
-
-int print_pointer(void* ptr);
-int len;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /**
 
@@ -52,14 +22,11 @@ int _printf(const char *format, ...)
 
     va_list args;
 
-    int printed = 0;
+    int printed = 0, len = 0, precision = 0, width = 0, i = 0;
 
+    char *s = NULL, *p = NULL, *out = NULL, c = '\0', type = '\0';
 
-    int i = 0;
-
-    char *s = NULL,*out = NULL, c = '\0', type = '\0';
-
-
+    unsigned int u = 0;
 
     void *ptr = NULL;
 
@@ -255,11 +222,11 @@ int print_hex(unsigned int n, int uppercase)
 
     int count = 0;
 
-    char digits[] = "0123456789ABCDEF";
+    char digits[] = "0123456789abcdef";
 
     if (uppercase)
 
-
+        digits = "0123456789ABCDEF";
 
     if (n / 16)
 
@@ -309,9 +276,9 @@ int print_pointer(void *ptr)
 
 }
 
-
 /**
- * print_pointer2 - Prints a pointer address to stdout
+
+ * print_pointer - Prints a pointer address to stdout
 
  * @ptr: The pointer to print
 
@@ -319,8 +286,9 @@ int print_pointer(void *ptr)
 
  * Return: The number of characters printed
 
+ */
 
-int print_pointer2(void *ptr)
+int print_pointer(void *ptr)
 
 {
 
@@ -333,4 +301,3 @@ int print_pointer2(void *ptr)
     return (count);
 
 }
-*/
