@@ -8,7 +8,8 @@ int print_hex(unsigned int n, int uppercase);
 int print_pointer(void *p);
 
 
-
+int len;
+int i;
 /**
 
  * _printf - A custom implementation of printf
@@ -29,7 +30,7 @@ int _printf(const char *format, ...)
 
     va_list args;
 
-    int printed = 0, int len = 0, i = 0;
+    int printed = 0, len = 0, i = 0;
 
     char *s = NULL, *out = NULL, c = '\0', type = '\0';
 
