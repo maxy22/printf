@@ -71,8 +71,8 @@ int _printf(const char *format, ...)
             switch (type)
 
             {
-/**
-                case 'c':
+
+              /**  case 'c':
 
                     c = (char) va_arg(args, int);
 
@@ -80,16 +80,16 @@ int _printf(const char *format, ...)
 
                     len = 1;
 
-                    break;
-		    */
+                    break;*/
+		    
 			
                case 'c': 
 
-                    char c = (char) va_arg(args, int);
+                     c = (char) va_arg(args, int);
 
                     putchar(c);
 
-                    p += 2;
+                    len = 1;
 
                     break;
 	
