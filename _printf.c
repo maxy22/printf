@@ -100,7 +100,7 @@ int _printf(const char *format, ...)
 
 	
 
-                /**case 's':
+                case 's':
 
                     s = va_arg(args, char *);
 
@@ -112,10 +112,10 @@ int _printf(const char *format, ...)
 
                     len = strlen(out);
 
-                    break;*/
+                    break;
 			    case 's':
 
-                     char* s;
+                     /**char* s;
 			    s = va_arg(args, const char*);
 			
 
@@ -129,7 +129,7 @@ int _printf(const char *format, ...)
 
                     len = 1;
 
-                    break;
+                    break;*/
 			
 
                 case 'd':
