@@ -120,7 +120,7 @@ int _printf(const char *format, ...)
 
                     ptr = va_arg(args, void *);
 
-                    printed += print_pointer(ptr);
+                    printed += print_pointer1(ptr);
 
                     break;
 
