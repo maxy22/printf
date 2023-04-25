@@ -10,6 +10,8 @@ int print_hex(unsigned int n, int uppercase);
 
 int print_pointer1(void *p);
 
+void print_formatted_string(const char* format, ...);
+
 
 
 int len;
