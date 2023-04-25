@@ -10,7 +10,7 @@ int print_hex(unsigned int n, int uppercase);
 
 int print_pointer1(void *p);
 
-int _putchar(char c);
+int putchar(char c);
 
 int len;
 
@@ -329,9 +329,9 @@ int print_pointer1(void *ptr)
 
  */
 
-int _putchar(char c)
+int putchar(char c)
 
 {
 
-	return (fwrite(1, &c, 1));
+	return (write(1, &c, 1));
 }
