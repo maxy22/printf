@@ -14,6 +14,6 @@ int print_hex(unsigned int n, int uppercase);
 
 int print_pointer(void *ptr);
 
-
+int _putchar(char c);
 
 #endif /* MAIN_H */
