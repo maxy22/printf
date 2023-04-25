@@ -115,7 +115,7 @@ int _printf(const char *format, ...)
                     break;*/
 			    case 's':
 
-                    const char *s;
+                    const char* s;
 			s = va_arg(args, const char*);
 
                     if (s == NULL) {
@@ -124,7 +124,7 @@ int _printf(const char *format, ...)
 
                     }
 
-                    putchar(s);
+                    fputs(s, stdout);
 
                     len = 1;
 
