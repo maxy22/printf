@@ -6,6 +6,7 @@
 int print_number(int n, int base, int is_signed);
 int print_hex(unsigned int n, int uppercase);
 int print_pointer(void *p);
+int len;
 
 
 /**
@@ -28,11 +29,11 @@ int _printf(const char *format, ...)
 
     va_list args;
 
-    int printed = 0, len = 0, precision = 0, width = 0, i = 0;
+    int printed = 0, len = 0, i = 0;
 
-    char *s = NULL, *p = NULL, *out = NULL, c = '\0', type = '\0';
+    char *s = NULL, *out = NULL, c = '\0', type = '\0';
 
-    unsigned int u = 0;
+    /*unsigned int u = 0;*/
 
     void *ptr = NULL;
 
