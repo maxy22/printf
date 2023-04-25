@@ -113,9 +113,9 @@ int _printf(const char *format, ...)
                     len = strlen(out);
 
                     break;
-			    case 's':
+			    /**case 's':
 
-                     /**char* s;
+                     char* s;
 			    s = va_arg(args, const char*);
 			
 
