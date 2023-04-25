@@ -341,7 +341,7 @@ int print_pointer1(void *ptr)
 
  * on error, -1 is retirned
 
- */
+ 
 
 int _putchar(char c)
 
@@ -349,3 +349,4 @@ int _putchar(char c)
 
 	return (write(1, &c, 1));
 }
+*/
