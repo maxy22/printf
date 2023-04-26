@@ -130,7 +130,7 @@ int _printf(const char *format, ...)
 
         len = strlen(s);
 	
-	   return (len);
+	   
 
         break;
 
@@ -229,7 +229,9 @@ int _printf(const char *format, ...)
     }
 
     va_end(args);
-
+	
+	
+return (len);
     return (printed);
 
 }
