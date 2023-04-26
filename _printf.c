@@ -129,6 +129,8 @@ int _printf(const char *format, ...)
         fputs(s, stdout);
 
         len = strlen(s);
+	
+	   return (len);
 
         break;
 
