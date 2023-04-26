@@ -131,6 +131,7 @@ int _printf(const char *format, ...)
         len = strlen(s);
 	
 	 len = printed;
+	    return (len);
 
         break;
 
