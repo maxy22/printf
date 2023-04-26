@@ -130,7 +130,7 @@ int _printf(const char *format, ...)
 
         len = strlen(s);
 	
-	  return (len);
+	  return (0);
 
         break;
 
