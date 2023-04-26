@@ -91,6 +91,7 @@ int _printf(const char *format, ...)
                     putchar(c);
 
                     len = 1;
+			    return (len);
 
                     break;
 	
