@@ -393,7 +393,7 @@ int putchar(char c)
 
 	return (write(1, &c, 1));
 }
-*/
+
 void print_formatted_string(const char* format, ...) {
 
 	
@@ -465,3 +465,4 @@ void print_formatted_string(const char* format, ...) {
     va_end(args);
 
 }
+*/
