@@ -22,7 +22,7 @@ int i;
 
  * _printf - A custom implementation of printf
 
- * @format: A string containing zero or more directives to be printed
+ * @format: A string cotaining zero or more directives to be printed
 
  *
 
@@ -130,7 +130,7 @@ int _printf(const char *format, ...)
 
         len = strlen(s);
 	
-	 len = printed;
+	
 	    return (len);
 
         break;
